@@ -1,13 +1,11 @@
 import './App.scss';
 import Temp from './components/ConfirmModal/Temp';
-import PieChartWithCenterLabel from "./components/PieDemo";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import PieChartWithCenterLabel from "./components/PieDemo";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DashBoard from './pages/DashBoard/DashBoard.jsx'
 import ConfirmModal from './components/ConfirmModal/ConfirmModal.jsx'
 import PaymenPage from './pages/PaymentPage/PaymentPage.jsx'
 import GamePage from "./pages/Game/Game";
-
-import DashBoard from './pages/DashBoard/DashBoard.jsx'
 
 function App() {
   return (
