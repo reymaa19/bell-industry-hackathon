@@ -1,16 +1,33 @@
-import "./App.scss";
-import TemporaryPage from "./pages/TemporaryPage/TemporaryPage";
+import './App.scss';
+import Temp from './components/ConfirmModal/Temp';
+import PieChartWithCenterLabel from "./components/PieDemo";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import DashBoard from './pages/DashBoard/DashBoard.jsx'
+import ConfirmModal from './components/ConfirmModal/ConfirmModal.jsx'
+import PaymenPage from './pages/PaymentPage/PaymentPage.jsx'
+import GamePage from "./pages/Game/Game";
 
 import DashBoard from './pages/DashBoard/DashBoard.jsx'
 
 function App() {
   return (
     <>
+      {/* <PieChartWithCenterLabel /> */}
+      {/* <Temp /> */}
       <DashBoard />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<DashBoard />}></Route>
+          <Route path='/PaymentPage' element={<PaymenPage />} />
+          <Route path="/game" element={<GamePage />} />
+        </Routes>
+      </BrowserRouter>
     </>
-    // <TemporaryPage />;
-  ) 
-  
+  )
 }
+
+//ConfirmModal -> Pay Now (make that into a Link tag) from PaymentPage
+//PaymentPage -> View bill (make that into a Link tag) from DashBoard
+//GamePage -> Play a game to earn blue bells 
 
 export default App;
