@@ -1,16 +1,21 @@
-
-import "./App.scss";
+import './App.scss';
+import Temp from './components/ConfirmModal/Temp';
+//import PieChartWithCenterLabel from "./components/PieDemo";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import PaymentPage from "./pages/PaymentPage/PaymentPage.jsx";
+import DashBoard from './pages/DashBoard/DashBoard.jsx'
+import ConfirmModal from './components/ConfirmModal/ConfirmModal.jsx'
+import PaymentPage from './pages/PaymentPage/PaymentPage.jsx'
 import GamePage from "./pages/Game/Game";
 
 function App() {
   return (
     <>
+      {/* <PieChartWithCenterLabel /> */}
+      {/* <Temp /> */}
+  
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<PaymentPage />} />
-          <Route path='/PaymentPage' element={<PaymentPage />} />
+          <Route path='/' element={<PaymentPage />} />
           <Route path="/game" element={<GamePage />} />
         </Routes>
       </BrowserRouter>
