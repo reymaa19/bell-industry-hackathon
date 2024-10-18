@@ -12,7 +12,7 @@ function App() {
     <>
       {/* <PieChartWithCenterLabel /> */}
       {/* <Temp /> */}
-
+      <PaymentPage />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DashBoard />}></Route>

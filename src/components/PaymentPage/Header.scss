@@ -1,0 +1,27 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/typography.scss";
+@use "../../styles/partials/variables.scss" as *;
+
+.header {
+    background-color: #e4e8ec;
+    &__title {
+        padding: 0.5rem 2rem 2rem 2rem;
+    }
+    &__navList {
+        list-style-type: none;
+        display: flex;
+        &Items {
+            margin: 0.5rem 2rem;
+            &:hover {
+                text-decoration: underline $bell-blue;
+                text-underline-offset: 0.7rem;
+                text-decoration-thickness: 0.1rem;
+            }
+        }
+    }
+    &__navPastBill {
+        color: $bell-blue;
+    }
+}
+
+
