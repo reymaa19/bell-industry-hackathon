@@ -78,12 +78,6 @@ const Featured = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="carousel">
-        <Summary
-          contribution={contribution}
-          theRest={15010.33}
-          initiative="Initiative Contributions"
-        />
-
         <Box sx={{ minWidth: 500 }}>
           <Card variant="outlined">{card1}</Card>
         </Box>

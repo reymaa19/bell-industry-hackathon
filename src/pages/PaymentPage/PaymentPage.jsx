@@ -11,8 +11,6 @@ export default function PaymentPage() {
     <div className="pymtPg">
       <Header />
       <Featured />
-      <Brief />
-      <BillDetail />
       <DonationComponent />
     </div>
   );
