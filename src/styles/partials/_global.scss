@@ -1,6 +1,11 @@
 @use "./mixins" as *;
 @use "./typography" as *;
-@use "./variables" as *;
+
+@forward "./variables";
+@forward "./mixins";
+@use "./typography";
+
+
 
 *,
 *:before,
@@ -8,7 +13,7 @@
   box-sizing: border-box;
   margin: 0;
   @include default-type;
-  color: $dark-grey;
+  color: black;
 }
 
 button,

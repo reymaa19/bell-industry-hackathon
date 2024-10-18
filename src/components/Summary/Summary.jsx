@@ -35,9 +35,9 @@ export default function PieAnimation({ contribution, theRest, initiative }) {
           },
         ]}
         skipAnimation={false}
-        //slotProps={{
-        //  legend: { hidden: true },
-        //}}
+        slotProps={{
+          legend: { hidden: true },
+        }}
       />
     </Box>
   );

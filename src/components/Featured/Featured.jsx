@@ -38,7 +38,15 @@ const Featured = () => {
         <div className="featured" />
       </CardContent>
       <CardActions>
-        <Button size="large">Learn More</Button>
+        <Button size="large">
+          <a
+            href="https://www.bell.ca/bell-for-better"
+            target="_blank"
+            className="anchor"
+          >
+            Learn More
+          </a>
+        </Button>
       </CardActions>
     </React.Fragment>
   );
