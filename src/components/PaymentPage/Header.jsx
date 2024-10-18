@@ -1,8 +1,16 @@
 import React from 'react'
 import './Header.scss'
+import icon from "/src/assets/bell-old-logo-white.png";
+
 
 export default function Header() {
   return (
+    <>
+      <div className="payment-header">
+        <img src={icon} className="payment-header-icon" />
+        <h1 className="payment-header-title">Blue Bells</h1>
+        <p className="payment-header-text">Welcome, Jane</p>
+        </div>
     <div className='header'>
       <h1 className='header__title'>My bill</h1>
       <div className='header__navList'>
@@ -10,5 +18,6 @@ export default function Header() {
         <p className='header__navListItems header__navPastBill'>Past bills</p>
       </div>
     </div>
+    </>
   )
 }

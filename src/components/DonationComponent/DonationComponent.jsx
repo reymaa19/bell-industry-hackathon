@@ -8,8 +8,8 @@ export default function DonationComponent() {
 
   const payment = (55.55).toFixed(2);
   const date = "October 31, 2024";
-  let taxes = (payment * 0.13).toFixed(2);
-  let initTotal= payment + taxes;
+  let taxes = (7.22).toFixed(2);
+  let initTotal= (Number(payment) + Number(taxes)).toFixed(2);
   const [donation, setDonation] = useState((Math.round(0*100)/100));
   const [contribution, setContribution] = useState(50);
   const [total, setTotal] = useState(initTotal);
@@ -20,7 +20,7 @@ export default function DonationComponent() {
 
   function handleDonation(event){
     let amount = Number(event.target.value);
-    let totalAmount = amount + payment + taxes;
+    let totalAmount = (Number(amount) + Number(initTotal)).toFixed(2);
     setDonation(amount.toFixed(2));
     setTotal(totalAmount);
   }
@@ -28,6 +28,7 @@ export default function DonationComponent() {
 
   //
   return (
+    <>
     <div className="donation-component-wrapper">
     <div className="donation-component">
       <div className="donation-component--left">
@@ -73,7 +74,7 @@ export default function DonationComponent() {
 
     </div>
     </div>
-
+    </>
 
   );
 }
