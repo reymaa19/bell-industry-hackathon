@@ -1,5 +1,10 @@
+import './App.scss';
+import PieChartWithCenterLabel from "./components/PieDemo";
+
 function App() {
-  return <>WELCOME</>;
+  return <>
+    <PieChartWithCenterLabel />
+  </>;
 }
 
 export default App;
