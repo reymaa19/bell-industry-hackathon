@@ -2,10 +2,6 @@
 @use "./mixins" as *;
 @use "./typography" as *;
 
-@forward "./mixins";
-@forward "./typography";
-@forward "./variables";
-
 
 *,
 *:before,
