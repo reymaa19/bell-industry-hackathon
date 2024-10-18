@@ -4,7 +4,7 @@ import { useState } from "react";
 import ConfirmModal from "./ConfirmModal";
 import "./Temp.scss";
 
-const Temp = ({ donate }) => {
+const ConfirmButton = ({ donate }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => {
@@ -13,7 +13,7 @@ const Temp = ({ donate }) => {
   };
 
   return (
-    <div className="temp">
+    <>
       <Button
         variant="contained"
         color="success"
@@ -21,11 +21,11 @@ const Temp = ({ donate }) => {
         size="lg"
         className="temp__button"
       >
-        <Typography color="white">CONFIRM PAYMENT</Typography>
+        <Typography color="white">Pay Now</Typography>
       </Button>
       {isOpen && <ConfirmModal isOpen={isOpen} closeModal={closeModal} />}
-    </div>
+    </>
   );
 };
 
-export default Temp;
+export default ConfirmButton;

@@ -33,6 +33,7 @@ const initiatives = [
 const CharityList = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedInitiative, setSelectedInitiative] = useState(null);
+  const [score, setScore] = useState(0);
 
   const openModal = (initiative) => {
     setSelectedInitiative(initiative);
@@ -78,6 +79,7 @@ const CharityList = () => {
           isOpen={isOpen}
           closeModal={closeModal}
           initiative={selectedInitiative}
+          setScore={setScore}
         />
       )}
     </section>

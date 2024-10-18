@@ -3,10 +3,11 @@ import { Button } from "@mui/material";
 import Modal from "react-modal";
 import "./InitiativeModal.scss";
 
-const InitiativeModal = ({ isOpen, closeModal }) => {
+const InitiativeModal = ({ isOpen, closeModal, setScore }) => {
   Modal.setAppElement("#root");
 
   const handleClick = () => {
+    setScore(0);
     closeModal();
   };
 
@@ -21,17 +22,16 @@ const InitiativeModal = ({ isOpen, closeModal }) => {
       <button
         alt="Close"
         className="confirm__close-button"
-        onClick={closeModal}
+        onClick={handleClick}
       />
       <div className="confirm__description">
-        <Typography level="h3">Payment Confirmed!</Typography>
+        <Typography level="h3">
+          Thank you for supporting one of the Bell's initiatives!
+        </Typography>
+        <p>Your contribution makes a big difference!</p>
         <p>
-          Your payment of $1,000 has been successfully processed, with 10% of
-          that amount being generously donated to the Better world initiative.
-        </p>
-        <p>
-          Bell will be matching your donation of $100 to the Better world
-          initiative.
+          You are welcome to play a game again to support other initiatives as
+          well.
         </p>
         <div className="confirm__initiative-logo" />
         <p>Thank you!</p>

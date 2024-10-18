@@ -10,7 +10,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<DashBoard />}></Route>
+          <Route path="/" element={<PaymentPage />} />
           <Route path="/PaymentPage" element={<PaymentPage />} />
           <Route path="/game" element={<GamePage />} />
           <Route path="/game/modal" element={<InitiativeModal />} />
@@ -22,6 +22,7 @@ function App() {
 
 //ConfirmModal -> Pay Now (make that into a Link tag) from PaymentPage
 //PaymentPage -> View bill (make that into a Link tag) from DashBoard
+//GamePage -> Play a game to earn blue bells
 //GamePage -> Play a game to earn blue bells
 
 export default App;
