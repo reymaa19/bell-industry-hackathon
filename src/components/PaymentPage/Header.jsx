@@ -7,9 +7,11 @@ export default function Header() {
   return (
     <>
       <div className="payment-header">
+        <div className="payment-wrapper">
         <img src={icon} className="payment-header-icon" />
         <h1 className="payment-header-title">Blue Bells</h1>
-        <p className="payment-header-text">Welcome, Jane</p>
+        </div>
+        <p className="payment-header-text">Welcome back, Jane</p>
         </div>
     <div className='header'>
       <h1 className='header__title'>My bill</h1>
