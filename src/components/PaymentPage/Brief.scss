@@ -29,12 +29,15 @@
             padding: 0.3rem 2rem;
             border-radius: 2rem;
             color: #0065A4;
+            text-align: center;
         }
         &-pay {
             background-color: #0065A4;
-            padding: 0.3rem 2rem;
+            padding: 0 2rem;
+            padding-top: 0.5rem;
             border-radius: 2rem;
             color: white;
+            text-align:center;
         }
     }
 }
