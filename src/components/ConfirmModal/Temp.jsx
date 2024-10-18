@@ -29,4 +29,3 @@ const Temp = ({ donate }) => {
 };
 
 export default Temp;
-
