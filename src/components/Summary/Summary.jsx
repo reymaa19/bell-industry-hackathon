@@ -28,16 +28,16 @@ export default function PieAnimation({ contribution, theRest, initiative }) {
               },
             ],
             innerRadius: 0,
-            arcLabel: (item) => `$${item.value}`,
+            //arcLabel: (item) => `$${item.value}`,
             valueFormatter,
             highlightScope: { fade: "global", highlight: "item" },
             faded: { additionalRadius: -5 },
           },
         ]}
         skipAnimation={false}
-        slotProps={{
-          legend: { hidden: true },
-        }}
+        //slotProps={{
+        //  legend: { hidden: true },
+        //}}
       />
     </Box>
   );
