@@ -1,0 +1,13 @@
+@use "/src/styles/partials/global" as *;
+
+
+.temp {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiButton-colorSuccess{
+  color: $bell-blue;
+}

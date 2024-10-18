@@ -1,0 +1,60 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/typography.scss";
+@use "../../styles/partials/variables.scss" as *;
+
+.header {
+    padding-top:1rem;
+    background-color: #e4e8ec;
+    &__title {
+        padding: 0.5rem 2rem 2rem 2rem;
+    }
+    &__navList {
+        list-style-type: none;
+        display: flex;
+        &Items {
+            margin: 0.5rem 2rem;
+            &:hover {
+                text-decoration: underline $bell-blue;
+                text-underline-offset: 0.7rem;
+                text-decoration-thickness: 0.1rem;
+            }
+        }
+    }
+    &__navPastBill {
+        color: $bell-blue;
+    }
+}
+
+
+.payment-header{
+    background-color: $bell-blue;
+    height: 10rem;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 1rem;
+    justify-content: space-between;
+    padding-right: 2rem;
+    align-items:center;
+    
+
+    &-icon{
+        height:7rem;
+        padding-left: 2rem;
+    }
+    &-title{
+        color:white;
+        font-size: 3rem;
+    }
+    &-text{
+        color: white;
+        padding-left: 8rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.payment-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items:center;
+}

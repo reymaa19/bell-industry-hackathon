@@ -1,0 +1,93 @@
+@use "/src/styles/partials/global" as *;
+
+
+.donation-component{
+    padding-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6rem;
+    border-top: solid 2px $bell-blue;
+    padding-bottom: 2rem;
+    border-bottom: solid 2px $bell-blue;
+    margin-bottom: 2rem;
+
+    &-wrapper{
+        padding-top: 2rem;
+        margin: 2rem;
+    }
+
+    &__section-title, &__title{
+        border-bottom: solid 1px $light-grey;
+        padding-bottom: .5rem;
+        margin-bottom: 0.75rem;
+    }
+    &--left{
+        width: 40%;
+        height: 20rem;
+        padding-top:1rem;
+        padding-left:1rem;
+    }
+    &--right{
+        background-color: $light-grey;
+        width:40%;
+        height:20rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        border-radius: .25rem;
+        box-shadow: 1px 2px 5px 0px #63636433;
+
+    }
+    &__summary-title{
+        margin-bottom:0.75rem;
+        padding-bottom:0.75rem;
+    }
+    &__title{
+        font-weight:500;
+    }
+    &__bill-summary{
+        margin-top:1rem;
+    }
+    &__donation{
+        padding-top: 1rem;
+    }
+
+    &__line{
+        padding-top:1rem;
+    }
+}
+
+span{
+    font-weight: 600;
+}
+
+input{
+    margin-top:0.75rem;
+    display:block;
+    height: 2.25rem;
+    width: 17.5rem;
+    border: solid 2px $med-grey;
+    padding-left:0.5rem;
+    border-radius: .25rem;
+    &:focus{
+        border-color: $bell-blue;
+    }
+}
+
+.summary-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.button-wrapper{
+    margin-top:2rem;
+}
+
+.tiny-text{
+    font-size:0.9rem;
+    padding-top:0.5rem;
+    color: $bell-blue;
+}
