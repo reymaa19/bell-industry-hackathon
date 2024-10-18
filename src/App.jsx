@@ -1,19 +1,19 @@
 import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DashBoard from "./pages/DashBoard/DashBoard.jsx";
+import ConfirmModal from "./components/ConfirmModal/ConfirmModal.jsx";
 import PaymentPage from "./pages/PaymentPage/PaymentPage.jsx";
 import GamePage from "./pages/GamePage/GamePage.jsx";
-import InitiativeModal from "./components/InitiativeModal/InitiativeModal.jsx"
-import Temp from './components/ConfirmModal/Temp';
+import InitiativeModal from "./components/InitiativeModal/InitiativeModal.jsx";
+import Temp from "./components/ConfirmModal/Temp";
 //import PieChartWithCenterLabel from "./components/PieDemo";
-import ConfirmModal from './components/ConfirmModal/ConfirmModal.jsx'
 
 function App() {
   return (
     <>
       {/* <PieChartWithCenterLabel /> */}
       {/* <Temp /> */}
-  
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<PaymentPage />} />
