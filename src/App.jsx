@@ -1,32 +1,8 @@
-import { useState } from "react";
 import "./App.scss";
-import Temp from "./components/ConfirmModal/Temp";
-import Summary from "./components/Summary/Summary";
+import TemporaryPage from "./pages/TemporaryPage/TemporaryPage";
 
 function App() {
-  const [contribution, setContribution] = useState(1200.0);
-
-  const handleContributionChange = (increase) => {
-    setContribution(contribution + increase);
-  };
-
-  return (
-    <main className="main">
-      <div className="main__container">
-        <Summary
-          contribution={1000}
-          theRest={20010.33}
-          initiative="Better World Initiative"
-        />
-        <Summary
-          contribution={contribution}
-          theRest={10093.59}
-          initiative="Some Other Initiative"
-        />
-      </div>
-      <Temp donate={handleContributionChange} />
-    </main>
-  );
+  return <TemporaryPage />;
 }
 
 export default App;
