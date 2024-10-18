@@ -4,6 +4,7 @@ import './PaymentPage.scss'
 import Header from '../../components/PaymentPage/Header.jsx'
 import Brief from '../../components/PaymentPage/Brief.jsx'
 import BillDetail from '../../components/PaymentPage/BillDetail.jsx'
+import DonationComponent from '../../components/DonationComponent/DonationComponent.jsx'
 
 export default function PaymentPage() {
   return (
@@ -11,6 +12,8 @@ export default function PaymentPage() {
       <Header />
       <Brief />
       <BillDetail />
+      <DonationComponent />
+
     </div>
   )
 }

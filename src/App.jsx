@@ -14,11 +14,10 @@ function App() {
     <>
       {/* <PieChartWithCenterLabel /> */}
       {/* <Temp /> */}
-      <PaymentPage />
+  
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<DashBoard />}></Route>
-          <Route path='/PaymentPage' element={<PaymentPage />} />
+          <Route path='/' element={<PaymentPage />} />
           <Route path="/game" element={<GamePage />} />
         </Routes>
       </BrowserRouter>
