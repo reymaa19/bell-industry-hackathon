@@ -1,6 +1,7 @@
 @use "/src/styles/partials/global" as *;
 @use "/src/styles/partials/variables" as *;
 
+
 .donation-component{
     padding: 1rem;
     display: flex;
@@ -10,7 +11,7 @@
     column-gap: 6rem;
 
     &__section-title, &__title{
-        border-bottom: solid 1px $bell-blue;
+        border-bottom: solid 1px $light-grey;
         padding-bottom: .5rem;
         margin-bottom: 0.75rem;
     }
