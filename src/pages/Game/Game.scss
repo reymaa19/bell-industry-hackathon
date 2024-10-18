@@ -1,0 +1,21 @@
+.game {
+    &__page {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    }
+    &__heading {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    }
+}
