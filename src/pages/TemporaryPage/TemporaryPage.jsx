@@ -14,12 +14,12 @@ function TemporaryPage() {
     <main className="main">
       <div className="main__container">
         <Summary
-          contribution={1000}
-          theRest={20010.33}
+          contribution={contribution}
+          theRest={15010.33}
           initiative="Better World Initiative"
         />
         <Summary
-          contribution={contribution}
+          contribution={1000}
           theRest={10093.59}
           initiative="Some Other Initiative"
         />
