@@ -6,9 +6,7 @@ import DashBoard from './pages/DashBoard/DashBoard.jsx'
 import ConfirmModal from './components/ConfirmModal/ConfirmModal.jsx'
 import PaymentPage from './pages/PaymentPage/PaymentPage.jsx'
 import GamePage from "./pages/Game/Game";
-import DonationComponent from "./components/DonationComponent/DonationComponent";
 
-//<TemporaryPage />
 function App() {
   return (
     <>
@@ -22,11 +20,11 @@ function App() {
         </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
 //ConfirmModal -> Pay Now (make that into a Link tag) from PaymentPage
 //PaymentPage -> View bill (make that into a Link tag) from DashBoard
-//GamePage -> Play a game to earn blue bells 
+//GamePage -> Play a game to earn blue bells
 
 export default App;
