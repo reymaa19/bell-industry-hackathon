@@ -1,10 +1,10 @@
 import './App.scss';
 import Temp from './components/ConfirmModal/Temp';
-import PieChartWithCenterLabel from "./components/PieDemo";
+//import PieChartWithCenterLabel from "./components/PieDemo";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DashBoard from './pages/DashBoard/DashBoard.jsx'
 import ConfirmModal from './components/ConfirmModal/ConfirmModal.jsx'
-import PaymenPage from './pages/PaymentPage/PaymentPage.jsx'
+import PaymentPage from './pages/PaymentPage/PaymentPage.jsx'
 import GamePage from "./pages/Game/Game";
 import DonationComponent from "./components/DonationComponent/DonationComponent";
 
@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DashBoard />}></Route>
-          <Route path='/PaymentPage' element={<PaymenPage />} />
+          <Route path='/PaymentPage' element={<PaymentPage />} />
           <Route path="/game" element={<GamePage />} />
         </Routes>
       </BrowserRouter>
