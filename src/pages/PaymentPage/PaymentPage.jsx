@@ -7,7 +7,7 @@ import BillDetail from '../../components/PaymentPage/BillDetail.jsx'
 
 export default function PaymentPage() {
   return (
-    <div>
+    <div className='pymtPg'>
       <Header />
       <Brief />
       <BillDetail />

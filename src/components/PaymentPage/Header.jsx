@@ -3,12 +3,12 @@ import './Header.scss'
 
 export default function Header() {
   return (
-    <div>
-       <h1 className='pymtPg__title'>My bill</h1>
-      <ul className='pymtPg__navList'>
-        <li className='pymtPg__navListItems pymtPg__navCrrBill'>Current bill</li>
-        <li className='pymtPg__navListItems pymtPg__navPastBill'>Past bills</li>
-      </ul>
+    <div className='header'>
+      <h1 className='header__title'>My bill</h1>
+      <div className='header__navList'>
+        <p className='header__navListItems header__navCrrBill'>Current bill</p>
+        <p className='header__navListItems header__navPastBill'>Past bills</p>
+      </div>
     </div>
   )
 }

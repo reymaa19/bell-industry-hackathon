@@ -2,12 +2,12 @@ import './App.scss';
 import Temp from './components/ConfirmModal/Temp';
 import PieChartWithCenterLabel from "./components/PieDemo";
 
-import PaymentPage from './pages/PaymentPage'
+import PaymentPage from './pages/PaymentPage/PaymentPage.jsx'
 
 function App() {
   return <>
     {/* <PieChartWithCenterLabel /> */}
-    <Temp />
+    {/* <Temp /> */}
     <PaymentPage />
   </>;
 }
