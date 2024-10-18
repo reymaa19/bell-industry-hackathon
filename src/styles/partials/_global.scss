@@ -1,17 +1,19 @@
-@use './mixins.scss' as *;
-@use './typography.scss' as *;
-@use './variables.scss' as *;
+@use "./variables" as *;
+@use "./mixins" as *;
+@use "./typography" as *;
 
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-//px x10 = rem
+@forward "./mixins";
+@forward "./typography";
+@forward "./variables";
+
 
 *,
-*::after,
-*::before {
-    box-sizing: inherit;
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  @include default-type;
+  color: $dark-grey;
 }
 
 button, input, textarea {
