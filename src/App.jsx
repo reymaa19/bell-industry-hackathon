@@ -1,3 +1,4 @@
+
 import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PaymentPage from "./pages/PaymentPage/PaymentPage.jsx";
@@ -9,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<PaymentPage />} />
+          <Route path='/PaymentPage' element={<PaymentPage />} />
           <Route path="/game" element={<GamePage />} />
         </Routes>
       </BrowserRouter>
