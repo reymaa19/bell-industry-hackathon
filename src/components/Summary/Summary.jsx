@@ -6,8 +6,6 @@ import * as React from "react";
 export default function PieAnimation({ contribution, theRest, initiative }) {
   const valueFormatter = (item) => `$${item.value}`;
 
-  // TITLE IS HARDCODED
-
   return (
     <Box sx={{ width: 400 }}>
       <Typography level="h3" sx={{ mb: -4 }}>

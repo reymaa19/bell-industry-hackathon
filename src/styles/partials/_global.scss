@@ -1,7 +1,6 @@
-@use "./variables" as *;
 @use "./mixins" as *;
 @use "./typography" as *;
-
+@use "./variables" as *;
 
 *,
 *:before,
@@ -12,7 +11,10 @@
   color: $dark-grey;
 }
 
-button, input, textarea {
-    font-family: inherit;
-    font-size: 12px
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: 12px;
 }
+
