@@ -1,12 +1,8 @@
-import './App.scss';
-import Temp from './components/ConfirmModal/Temp';
-import PieChartWithCenterLabel from "./components/PieDemo";
+import "./App.scss";
+import TemporaryPage from "./pages/TemporaryPage/TemporaryPage";
 
 function App() {
-  return <>
-    {/* <PieChartWithCenterLabel /> */}
-    <Temp />
-  </>;
+  return <TemporaryPage />;
 }
 
 export default App;

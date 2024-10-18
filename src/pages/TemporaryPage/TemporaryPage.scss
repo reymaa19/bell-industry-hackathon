@@ -1,0 +1,9 @@
+.main {
+  min-height: 100vh;
+
+  &__container {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0 0 2rem;
+  }
+}
