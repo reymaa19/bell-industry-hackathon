@@ -6,7 +6,9 @@ import DashBoard from './pages/DashBoard/DashBoard.jsx'
 import ConfirmModal from './components/ConfirmModal/ConfirmModal.jsx'
 import PaymenPage from './pages/PaymentPage/PaymentPage.jsx'
 import GamePage from "./pages/Game/Game";
+import DonationComponent from "./components/DonationComponent/DonationComponent";
 
+//<TemporaryPage />
 function App() {
   return (
     <>
