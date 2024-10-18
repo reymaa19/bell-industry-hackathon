@@ -5,19 +5,13 @@ import ConfirmModal from "./components/ConfirmModal/ConfirmModal.jsx";
 import PaymentPage from "./pages/PaymentPage/PaymentPage.jsx";
 import GamePage from "./pages/GamePage/GamePage.jsx";
 import InitiativeModal from "./components/InitiativeModal/InitiativeModal.jsx";
-// import Temp from "./components/ConfirmModal/Temp";
-//import PieChartWithCenterLabel from "./components/PieDemo";
 
 function App() {
   return (
     <>
-      {/* <PieChartWithCenterLabel /> */}
-      {/* <Temp /> */}
-
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<PaymentPage />} />
-          <Route path="/PaymentPage" element={<PaymentPage />} />
           <Route path="/game" element={<GamePage />} />
           <Route path="/game/modal" element={<InitiativeModal />} />
         </Routes>

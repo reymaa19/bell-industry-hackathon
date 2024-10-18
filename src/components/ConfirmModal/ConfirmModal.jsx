@@ -25,14 +25,8 @@ const ConfirmModal = ({ isOpen, closeModal }) => {
       />
       <div className="confirm__description">
         <Typography level="h3">Payment Confirmed!</Typography>
-        <p>
-          Your payment of $1,000 has been successfully processed, with 10% of
-          that amount being generously donated to the Better world initiative.
-        </p>
-        <p>
-          Bell will be matching your donation of $100 to the Better world
-          initiative.
-        </p>
+        <p>Your payment has been successfully processed, with a portion of that amount being generously donated towards Canadian charities as part of the Bell Better World initiative.</p>
+        <p>Bell will be matching your donation of $5 for a total of $10 towards the Better world initiative.</p>
         <div className="confirm__initiative-logo" />
         <p>Thank you!</p>
       </div>

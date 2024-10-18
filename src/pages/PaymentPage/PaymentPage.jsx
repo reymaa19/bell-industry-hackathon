@@ -1,6 +1,5 @@
 import React from "react";
 import "./PaymentPage.scss";
-
 import Header from "../../components/PaymentPage/Header.jsx";
 import Featured from "../../components/Featured/Featured.jsx";
 import Brief from "../../components/PaymentPage/Brief.jsx";
