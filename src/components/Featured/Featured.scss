@@ -1,0 +1,34 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.featured {
+  border-radius: 3px;
+  margin-top: 2rem;
+  height: 220px;
+  width: 100%;
+  background-image: url("/src/assets/featured.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.featured * {
+  font-family: inherit;
+}
+
+.anchor {
+  color: #1976d3;
+  font-weight: 500;
+}
+
+.card-game {
+  margin-top: 0.5rem;
+  height: 220px;
+  width: 100%;
+  background-image: url("/src/assets/Bell_Blue_small_transparent.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
