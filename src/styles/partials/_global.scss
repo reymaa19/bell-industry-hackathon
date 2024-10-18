@@ -1,0 +1,19 @@
+@use './mixins.scss' as *;
+@use './typography.scss' as *;
+@use './variables.scss' as *;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+//px x10 = rem
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+button, input, textarea {
+    font-family: inherit;
+}
