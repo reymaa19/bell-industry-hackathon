@@ -10,8 +10,6 @@ export default function PaymentPage() {
   return (
     <div className='pymtPg'>
       <Header />
-      <Brief />
-      <BillDetail />
       <DonationComponent />
 
     </div>

@@ -1,5 +1,5 @@
 import './App.scss';
-import Temp from './components/ConfirmModal/Temp';
+//import Temp from './components/ConfirmModal/Temp';
 //import PieChartWithCenterLabel from "./components/PieDemo";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DashBoard from './pages/DashBoard/DashBoard.jsx'

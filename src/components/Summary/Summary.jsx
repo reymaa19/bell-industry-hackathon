@@ -7,11 +7,13 @@ export default function PieAnimation({ contribution, theRest, initiative }) {
   const valueFormatter = (item) => `$${item.value}`;
 
   return (
-    <Box sx={{ width: 400 }}>
-      <Typography level="h3" sx={{ mb: -4 }}>
-        {initiative}
-      </Typography>
+    <><h2>
+    {initiative}
+  </h2>
+    <Box sx={{ width: 480 }}>
       <PieChart
+        margin={{ top: 100, bottom: 100 }} 
+        colors={['#0065A4','#808285']}
         height={400}
         series={[
           {
@@ -19,12 +21,12 @@ export default function PieAnimation({ contribution, theRest, initiative }) {
               {
                 id: 0,
                 value: theRest,
-                label: "Others contributions",
+                label: "Mental Health Initiatives",
               },
               {
                 id: 1,
                 value: contribution,
-                label: "Your Contribution",
+                label: "Youth Empowerment through Sports",
               },
             ],
             innerRadius: 0,
@@ -36,9 +38,14 @@ export default function PieAnimation({ contribution, theRest, initiative }) {
         ]}
         skipAnimation={false}
         slotProps={{
-          legend: { hidden: true },
+          legend: { 
+            hidden: false,
+            direction: 'row',
+            position: { vertical: 'bottom', horizontal: 'bottom' },
+            padding: 0, },
         }}
       />
     </Box>
+    </>
   );
 }
