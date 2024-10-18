@@ -13,4 +13,11 @@
   margin: 0;
   @include default-type;
   color: $dark-grey;
+}@use './mixins.scss' as *;
+@use './typography.scss' as *;
+@use './variables.scss' as *;
+
+
+button, input, textarea {
+    font-family: inherit;
 }
