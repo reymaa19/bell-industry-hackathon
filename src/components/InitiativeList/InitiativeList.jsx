@@ -1,4 +1,7 @@
 import "./InitiativeList.scss";
+import InitiativeModal from "../../components/InitiativeModal/InitiativeModal";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const initiatives = [
   {
@@ -28,6 +31,18 @@ const initiatives = [
 ];
 
 const CharityList = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedInitiative, setSelectedInitiative] = useState(null);
+
+  const openModal = (initiative) => {
+    setSelectedInitiative(initiative);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedInitiative(null);
+  };
   return (
     <section className="initiative__section">
       <div className="initiative__heading">
@@ -36,18 +51,35 @@ const CharityList = () => {
       <ul className="initiative__list">
         {initiatives.map((initiative) => (
           <li key={initiative.id} className="initiative__item">
-            <div className="initiative__sub-heading">
-              <div className="initiative__box">
-                <h2 className="initiative__name">{initiative.name}</h2>
+            <Link
+              to="/game/modal"
+              onClick={(e) => {
+                e.preventDefault();
+                openModal(initiative);
+              }}
+            >
+              <div className="initiative__sub-heading">
+                <div className="initiative__box">
+                  <h2 className="initiative__name">{initiative.name}</h2>
+                </div>
+                <div className="initiative__box">
+                  <h2 className="initiative__coins">
+                    500 BlueBells (equivalent to 5 CAD)
+                  </h2>
+                </div>
               </div>
-              <div className="initiative__box">
-                <h2>500 blue bells (equivalent to 5 CAD)</h2>
-              </div>
-            </div>
-            <p className="initiative__text">{initiative.description}</p>
+              <p className="initiative__text">{initiative.description}</p>
+            </Link>
           </li>
         ))}
       </ul>
+      {isOpen && selectedInitiative && (
+        <InitiativeModal
+          isOpen={isOpen}
+          closeModal={closeModal}
+          initiative={selectedInitiative}
+        />
+      )}
     </section>
   );
 };

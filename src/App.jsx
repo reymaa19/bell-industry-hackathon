@@ -2,7 +2,8 @@ import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DashBoard from "./pages/DashBoard/DashBoard.jsx";
 import PaymentPage from "./pages/PaymentPage/PaymentPage.jsx";
-import GamePage from "./pages/Game/Game";
+import GamePage from "./pages/GamePage/GamePage.jsx";
+import InitiativeModal from "./components/InitiativeModal/InitiativeModal.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<DashBoard />}></Route>
           <Route path="/PaymentPage" element={<PaymentPage />} />
           <Route path="/game" element={<GamePage />} />
+          <Route path="/game/modal" element={<InitiativeModal />} />
         </Routes>
       </BrowserRouter>
     </>

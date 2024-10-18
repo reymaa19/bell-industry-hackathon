@@ -11,6 +11,7 @@ body {
 .initiative {
     &__list {
     list-style: none;
+    color: black;
     }
     &__item {
     background-color: rgb(15, 94, 178);
@@ -38,5 +39,8 @@ body {
     &__box {
         display: flex;
         width: 50%;
+    }
+    &__coins {
+        background-color: lightblue;
     }
 }
