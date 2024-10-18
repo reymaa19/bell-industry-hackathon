@@ -1,12 +1,13 @@
 import Typography from "@mui/joy/Typography";
 import { Button } from "@mui/material";
 import Modal from "react-modal";
-import "./ConfirmModal.scss";
+import "./InitiativeModal.scss";
 
-const ConfirmModal = ({ isOpen, closeModal }) => {
+const InitiativeModal = ({ isOpen, closeModal, setScore }) => {
   Modal.setAppElement("#root");
 
   const handleClick = () => {
+    setScore(0);
     closeModal();
   };
 
@@ -14,19 +15,24 @@ const ConfirmModal = ({ isOpen, closeModal }) => {
     <Modal
       isOpen={isOpen}
       onRequestClose={closeModal}
-      contentLabel="Confirm Modal"
+      contentLabel="Initiative Modal"
       className="confirm"
       overlayClassName="confirm__overlay"
     >
       <button
         alt="Close"
         className="confirm__close-button"
-        onClick={closeModal}
+        onClick={handleClick}
       />
       <div className="confirm__description">
-        <Typography level="h3">Payment Confirmed!</Typography>
-        <p>Your payment has been successfully processed, with a portion of that amount being generously donated towards Canadian charities as part of the Bell Better World initiative.</p>
-        <p>Bell will be matching your donation of $5 for a total of $10 towards the Better world initiative.</p>
+        <Typography level="h3">
+          Thank you for supporting one of the Bell's initiatives!
+        </Typography>
+        <p>Your contribution makes a big difference!</p>
+        <p>
+          You are welcome to play a game again to support other initiatives as
+          well.
+        </p>
         <div className="confirm__initiative-logo" />
         <p>Thank you!</p>
       </div>
@@ -45,4 +51,4 @@ const ConfirmModal = ({ isOpen, closeModal }) => {
   );
 };
 
-export default ConfirmModal;
+export default InitiativeModal;

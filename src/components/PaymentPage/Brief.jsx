@@ -1,15 +1,6 @@
-import { useState } from "react";
 import "./Brief.scss";
-import ConfirmButton from "../ConfirmModal/ConfirmButton";
-import Summary from "../Summary/Summary";
 
 export default function Brief() {
-  const [contribution, setContribution] = useState(1200.00);
-
-  const handleContributionChange = (increase) => {
-    setContribution(contribution + increase);
-  };
-
   return (
     <div className="brief">
       <p className="brief__title">Amount due</p>
@@ -19,6 +10,9 @@ export default function Brief() {
         <p className='brief__reminder-amount'>$100</p>
       </div>
 
+      <div className="brief__redirections">
+        <p className="brief__redirections-bill">View detailed bill ↓</p>
+      </div>
     </div>
   );
 }

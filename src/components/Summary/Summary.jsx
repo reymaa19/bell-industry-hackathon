@@ -30,7 +30,7 @@ export default function PieAnimation({ contribution, theRest, initiative }) {
               },
             ],
             innerRadius: 0,
-            arcLabel: (item) => `$${item.value}`,
+            //arcLabel: (item) => `$${item.value}`,
             valueFormatter,
             highlightScope: { fade: "global", highlight: "item" },
             faded: { additionalRadius: -5 },
