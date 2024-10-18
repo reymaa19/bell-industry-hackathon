@@ -1,0 +1,16 @@
+@forward "./mixins";
+@forward "./typography";
+@forward "./variables";
+
+@use "./variables" as *;
+@use "./mixins" as *;
+@use "./typography" as *;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  @include default-type;
+  color: $dark-grey;
+}
