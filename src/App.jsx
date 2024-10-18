@@ -15,7 +15,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DashBoard />}></Route>
-          <Route path='/ConfirmModal' element={<ConfirmModal />} />
           <Route path='/PaymentPage' element={<PaymenPage />} />
         </Routes>
       </BrowserRouter>
