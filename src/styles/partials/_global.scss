@@ -1,0 +1,18 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+@use "./typography" as *;
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  @include default-type;
+  color: $dark-grey;
+}
+
+button, input, textarea {
+    font-family: inherit;
+    font-size: 12px
+}
